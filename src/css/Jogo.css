@@ -1,0 +1,181 @@
+.game-container {
+  width: 90%;
+  height: 78vh;
+  background-color: #f3f1f1;
+  -webkit-transform: translate(0, 10%);
+          transform: translate(0, 10%);
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: ani-init-game 1s ease;
+          animation: ani-init-game 1s ease;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+@-webkit-keyframes ani-init-game {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
+  }
+}
+
+@keyframes ani-init-game {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
+  }
+}
+
+.game-area {
+  width: 98%;
+  height: 97%;
+  border: 2px solid #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr 150px;
+      grid-template-columns: 150px 1fr 150px;
+  -ms-grid-rows: 120px 1fr 100px;
+      grid-template-rows: 120px 1fr 100px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 80%;
+  background-size: 198%;
+  background-repeat: no-repeat;
+  background-position: 42% 28%;
+}
+
+.user-name {
+  margin: 0;
+  text-align: center;
+  background: #FFF;
+  height: 20%;
+}
+
+.user-info {
+  background: #7A7CFE;
+  border: 2px solid #000;
+}
+
+.user-status {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.btn-sair {
+  grid-column: 3/-1;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.btn-sair a {
+  text-decoration: none;
+  color: #FFF;
+  background: #7A7CFE;
+  padding: 12px 34px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-sair a:hover {
+  background: #474afe;
+}
+
+.head-game {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-size: 33px;
+}
+
+.game-content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-grid-rows: 20% 1fr;
+      grid-template-rows: 20% 1fr;
+}
+
+.game-options {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-opt {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 22px;
+  background: #7A7CFE;
+  color: #FFF;
+  padding: 4% 2%;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.game-opt:hover {
+  background: #474afe;
+}
+
+.user-status img {
+  width: 100%;
+}
+
+.user-status > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 87px;
+      grid-template-columns: 1fr 87px;
+  grid-gap: 11%;
+  margin-top: 29%;
+  margin-left: 4%;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+/*# sourceMappingURL=Jogo.css.map */

@@ -1,0 +1,133 @@
+$default-bg: #f3f1f1;;
+$default-border: 2px solid #000;
+$special-bg: #7A7CFE;
+.game-container {
+    width: 90%;
+    height: 78vh;
+    background-color: $default-bg;
+    transform: translate(0, 10%);
+    margin: 0 auto;
+    transition: 0.3s;
+    animation: ani-init-game 1s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+@keyframes ani-init-game {
+    from { opacity: 0; transform: translateY(0);}
+    to {opacity: 1; transform: translateY(8%);}
+}
+
+.game-area {
+    width: 98%;
+    height: 97%;
+    border: $default-border;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 120px 1fr 100px;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 80%;
+    background-size: 198%;
+    background-repeat: no-repeat;
+    background-position: 42% 28%;
+}
+
+.user-name {
+    margin: 0;
+    text-align: center;
+    background: #FFF;
+    height: 20%;
+}
+
+.user-info {
+    background: $special-bg;
+    border: $default-border;
+}
+
+.user-status {
+    // grid-row: 3/-1;
+    // grid-column: 1/-1;
+    // display: grid;
+    // grid-template-columns: 100px 100px 100px;
+    // justify-items: center;
+    // align-items: center;
+    // margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.btn-sair {
+    grid-column: 3/-1;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+.btn-sair a {
+    text-decoration: none;
+    color: #FFF;
+    background: $special-bg;
+    padding: 12px 34px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover{
+        background: darken($special-bg, 10);
+    }
+}
+
+.head-game {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 33px;
+}
+
+.game-content {
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: 20% 1fr;
+}
+
+.game-options {
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+.game-opt {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 22px;
+    background: $special-bg;
+    color: #FFF;
+    padding: 4% 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background: darken($special-bg, 10);
+    }
+}
+
+.user-status img {
+    width: 100%;
+}
+
+.user-status > div {
+    display: grid;
+    grid-template-columns: 1fr 87px;
+    grid-gap: 11%;
+    margin-top: 29%;
+    margin-left: 4%;
+    font-size: 16px;
+    align-items: center;
+    justify-items: center;
+}
+
